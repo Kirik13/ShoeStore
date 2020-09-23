@@ -30,6 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Menu2 = new System.Windows.Forms.Button();
+            this.dtb3 = new System.Windows.Forms.Button();
+            this.dtb2 = new System.Windows.Forms.Button();
+            this.dtb1 = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.Menu = new System.Windows.Forms.Button();
             this.back3 = new System.Windows.Forms.Button();
             this.back2 = new System.Windows.Forms.Button();
@@ -43,12 +49,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Add = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtb1 = new System.Windows.Forms.Button();
-            this.dtb2 = new System.Windows.Forms.Button();
-            this.dtb3 = new System.Windows.Forms.Button();
-            this.Menu2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -93,6 +93,102 @@
             this.tabPage1.Size = new System.Drawing.Size(1263, 939);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // Menu2
+            // 
+            this.Menu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.Menu2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menu2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Menu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Menu2.Location = new System.Drawing.Point(524, 643);
+            this.Menu2.Name = "Menu2";
+            this.Menu2.Size = new System.Drawing.Size(217, 71);
+            this.Menu2.TabIndex = 58;
+            this.Menu2.Text = "Меню";
+            this.Menu2.UseVisualStyleBackColor = false;
+            this.Menu2.Visible = false;
+            this.Menu2.Click += new System.EventHandler(this.Menu2_Click);
+            // 
+            // dtb3
+            // 
+            this.dtb3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.dtb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtb3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.dtb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dtb3.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dtb3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.dtb3.Location = new System.Drawing.Point(385, 504);
+            this.dtb3.Name = "dtb3";
+            this.dtb3.Size = new System.Drawing.Size(217, 103);
+            this.dtb3.TabIndex = 57;
+            this.dtb3.Text = "Продажи";
+            this.dtb3.UseVisualStyleBackColor = false;
+            this.dtb3.Visible = false;
+            this.dtb3.Click += new System.EventHandler(this.dtb3_Click);
+            // 
+            // dtb2
+            // 
+            this.dtb2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.dtb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtb2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.dtb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dtb2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dtb2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.dtb2.Location = new System.Drawing.Point(385, 383);
+            this.dtb2.Name = "dtb2";
+            this.dtb2.Size = new System.Drawing.Size(217, 93);
+            this.dtb2.TabIndex = 56;
+            this.dtb2.Text = "Товары";
+            this.dtb2.UseVisualStyleBackColor = false;
+            this.dtb2.Visible = false;
+            this.dtb2.Click += new System.EventHandler(this.dtb2_Click);
+            // 
+            // dtb1
+            // 
+            this.dtb1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.dtb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtb1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.dtb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dtb1.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dtb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.dtb1.Location = new System.Drawing.Point(385, 212);
+            this.dtb1.Name = "dtb1";
+            this.dtb1.Size = new System.Drawing.Size(217, 144);
+            this.dtb1.TabIndex = 55;
+            this.dtb1.Text = "Категория\r\nобуви";
+            this.dtb1.UseVisualStyleBackColor = false;
+            this.dtb1.Visible = false;
+            this.dtb1.Click += new System.EventHandler(this.dtb1_Click);
+            // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Add.Location = new System.Drawing.Point(385, 38);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(250, 147);
+            this.Add.TabIndex = 53;
+            this.Add.Text = "Добавление ";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(374, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(501, 66);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Выберите таблицу:";
+            this.label1.Visible = false;
             // 
             // Menu
             // 
@@ -289,102 +385,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // Add
-            // 
-            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Add.Location = new System.Drawing.Point(385, 38);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(217, 147);
-            this.Add.TabIndex = 53;
-            this.Add.Text = "Добавление ";
-            this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(374, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(501, 66);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Выберите таблицу:";
-            this.label1.Visible = false;
-            // 
-            // dtb1
-            // 
-            this.dtb1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.dtb1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtb1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.dtb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dtb1.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dtb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.dtb1.Location = new System.Drawing.Point(385, 212);
-            this.dtb1.Name = "dtb1";
-            this.dtb1.Size = new System.Drawing.Size(217, 144);
-            this.dtb1.TabIndex = 55;
-            this.dtb1.Text = "Категория\r\nобуви";
-            this.dtb1.UseVisualStyleBackColor = false;
-            this.dtb1.Visible = false;
-            this.dtb1.Click += new System.EventHandler(this.dtb1_Click);
-            // 
-            // dtb2
-            // 
-            this.dtb2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.dtb2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtb2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.dtb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dtb2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dtb2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.dtb2.Location = new System.Drawing.Point(385, 383);
-            this.dtb2.Name = "dtb2";
-            this.dtb2.Size = new System.Drawing.Size(217, 93);
-            this.dtb2.TabIndex = 56;
-            this.dtb2.Text = "Товары";
-            this.dtb2.UseVisualStyleBackColor = false;
-            this.dtb2.Visible = false;
-            this.dtb2.Click += new System.EventHandler(this.dtb2_Click);
-            // 
-            // dtb3
-            // 
-            this.dtb3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.dtb3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtb3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.dtb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dtb3.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dtb3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.dtb3.Location = new System.Drawing.Point(385, 504);
-            this.dtb3.Name = "dtb3";
-            this.dtb3.Size = new System.Drawing.Size(217, 103);
-            this.dtb3.TabIndex = 57;
-            this.dtb3.Text = "Продажи";
-            this.dtb3.UseVisualStyleBackColor = false;
-            this.dtb3.Visible = false;
-            this.dtb3.Click += new System.EventHandler(this.dtb3_Click);
-            // 
-            // Menu2
-            // 
-            this.Menu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.Menu2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Menu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Menu2.Location = new System.Drawing.Point(524, 643);
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(217, 71);
-            this.Menu2.TabIndex = 58;
-            this.Menu2.Text = "Меню";
-            this.Menu2.UseVisualStyleBackColor = false;
-            this.Menu2.Visible = false;
-            this.Menu2.Click += new System.EventHandler(this.Menu2_Click);
             // 
             // MenuAdmin
             // 

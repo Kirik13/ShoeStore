@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.KolNaSkald = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Menu2 = new System.Windows.Forms.Button();
+            this.Data = new System.Windows.Forms.TextBox();
+            this.back = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Tena = new System.Windows.Forms.TextBox();
-            this.Categ = new System.Windows.Forms.TextBox();
-            this.NameTv = new System.Windows.Forms.TextBox();
+            this.Skidka = new System.Windows.Forms.TextBox();
+            this.Kol = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.NamTV = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label5
@@ -52,45 +52,47 @@
             this.label5.TabIndex = 88;
             this.label5.Text = "Дата";
             // 
-            // KolNaSkald
+            // Data
             // 
-            this.KolNaSkald.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.KolNaSkald.Location = new System.Drawing.Point(639, 507);
-            this.KolNaSkald.Multiline = true;
-            this.KolNaSkald.Name = "KolNaSkald";
-            this.KolNaSkald.Size = new System.Drawing.Size(426, 66);
-            this.KolNaSkald.TabIndex = 87;
+            this.Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Data.Location = new System.Drawing.Point(639, 507);
+            this.Data.Multiline = true;
+            this.Data.Name = "Data";
+            this.Data.Size = new System.Drawing.Size(426, 66);
+            this.Data.TabIndex = 87;
+            this.Data.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Data_KeyPress);
             // 
-            // button1
+            // back
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 58);
-            this.button1.TabIndex = 86;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(51, 58);
+            this.back.TabIndex = 86;
+            this.back.Text = "<";
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Menu2
+            // Add
             // 
-            this.Menu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.Menu2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Menu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Menu2.Location = new System.Drawing.Point(512, 618);
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(217, 71);
-            this.Menu2.TabIndex = 85;
-            this.Menu2.Text = "Добавить";
-            this.Menu2.UseVisualStyleBackColor = false;
+            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Add.Location = new System.Drawing.Point(512, 618);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(217, 71);
+            this.Add.TabIndex = 85;
+            this.Add.Text = "Добавить";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // label4
             // 
@@ -125,32 +127,25 @@
             this.label2.TabIndex = 82;
             this.label2.Text = "Наименование товара";
             // 
-            // Tena
+            // Skidka
             // 
-            this.Tena.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Tena.Location = new System.Drawing.Point(639, 401);
-            this.Tena.Multiline = true;
-            this.Tena.Name = "Tena";
-            this.Tena.Size = new System.Drawing.Size(426, 66);
-            this.Tena.TabIndex = 81;
+            this.Skidka.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Skidka.Location = new System.Drawing.Point(639, 401);
+            this.Skidka.Multiline = true;
+            this.Skidka.Name = "Skidka";
+            this.Skidka.Size = new System.Drawing.Size(426, 66);
+            this.Skidka.TabIndex = 81;
+            this.Skidka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Skidka_KeyPress);
             // 
-            // Categ
+            // Kol
             // 
-            this.Categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Categ.Location = new System.Drawing.Point(639, 276);
-            this.Categ.Multiline = true;
-            this.Categ.Name = "Categ";
-            this.Categ.Size = new System.Drawing.Size(426, 66);
-            this.Categ.TabIndex = 80;
-            // 
-            // NameTv
-            // 
-            this.NameTv.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameTv.Location = new System.Drawing.Point(639, 159);
-            this.NameTv.Multiline = true;
-            this.NameTv.Name = "NameTv";
-            this.NameTv.Size = new System.Drawing.Size(426, 66);
-            this.NameTv.TabIndex = 79;
+            this.Kol.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Kol.Location = new System.Drawing.Point(639, 276);
+            this.Kol.Multiline = true;
+            this.Kol.Name = "Kol";
+            this.Kol.Size = new System.Drawing.Size(426, 66);
+            this.Kol.TabIndex = 80;
+            this.Kol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Kol_KeyPress);
             // 
             // label1
             // 
@@ -164,22 +159,30 @@
             this.label1.Text = "Продажи:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // NamTV
+            // 
+            this.NamTV.FormattingEnabled = true;
+            this.NamTV.Location = new System.Drawing.Point(639, 191);
+            this.NamTV.Name = "NamTV";
+            this.NamTV.Size = new System.Drawing.Size(426, 33);
+            this.NamTV.TabIndex = 89;
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1252, 762);
+            this.Controls.Add(this.NamTV);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.KolNaSkald);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Menu2);
+            this.Controls.Add(this.Data);
+            this.Controls.Add(this.back);
+            this.Controls.Add(this.Add);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Tena);
-            this.Controls.Add(this.Categ);
-            this.Controls.Add(this.NameTv);
+            this.Controls.Add(this.Skidka);
+            this.Controls.Add(this.Kol);
             this.Controls.Add(this.label1);
             this.Name = "Sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -192,15 +195,15 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox KolNaSkald;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Menu2;
+        private System.Windows.Forms.TextBox Data;
+        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Tena;
-        private System.Windows.Forms.TextBox Categ;
-        private System.Windows.Forms.TextBox NameTv;
+        private System.Windows.Forms.TextBox Skidka;
+        private System.Windows.Forms.TextBox Kol;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox NamTV;
     }
 }

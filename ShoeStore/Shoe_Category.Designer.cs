@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Menu2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +49,6 @@
             this.label1.Size = new System.Drawing.Size(455, 66);
             this.label1.TabIndex = 55;
             this.label1.Text = "Категория обуви:";
-     
             // 
             // Categ
             // 
@@ -59,7 +58,6 @@
             this.Categ.Name = "Categ";
             this.Categ.Size = new System.Drawing.Size(426, 66);
             this.Categ.TabIndex = 59;
-    
             // 
             // GaranSrok
             // 
@@ -69,7 +67,7 @@
             this.GaranSrok.Name = "GaranSrok";
             this.GaranSrok.Size = new System.Drawing.Size(426, 66);
             this.GaranSrok.TabIndex = 60;
-
+            this.GaranSrok.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GaranSrok_KeyPress);
             // 
             // PravYxod
             // 
@@ -79,7 +77,6 @@
             this.PravYxod.Name = "PravYxod";
             this.PravYxod.Size = new System.Drawing.Size(426, 66);
             this.PravYxod.TabIndex = 61;
- 
             // 
             // label2
             // 
@@ -114,36 +111,37 @@
             this.label4.TabIndex = 64;
             this.label4.Text = "Гарантийный срок";
             // 
-            // Menu2
+            // Add
             // 
-            this.Menu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.Menu2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu2.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Menu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.Menu2.Location = new System.Drawing.Point(427, 535);
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(217, 71);
-            this.Menu2.TabIndex = 65;
-            this.Menu2.Text = "Добавить";
-            this.Menu2.UseVisualStyleBackColor = false;
+            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Add.Location = new System.Drawing.Point(427, 535);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(217, 71);
+            this.Add.TabIndex = 65;
+            this.Add.Text = "Добавить";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // button1
+            // back
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 58);
-            this.button1.TabIndex = 66;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Trebuchet MS", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(51, 58);
+            this.back.TabIndex = 66;
+            this.back.Text = "<";
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.button1_Click);
             // 
             // Shoe_Category
             // 
@@ -151,8 +149,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1100, 699);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Menu2);
+            this.Controls.Add(this.back);
+            this.Controls.Add(this.Add);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -177,7 +175,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button Menu2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button back;
     }
 }
