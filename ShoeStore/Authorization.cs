@@ -93,7 +93,11 @@ namespace ShoeStore
                 }
                 else
                 {
-                    MessageBox.Show("Это не админ");
+                    this.Hide();
+                    MenuAdmin admin = new MenuAdmin();
+                    admin.Add.Enabled = false;
+                    admin.DeletTB.Enabled = false;
+                    admin.ShowDialog();
                 }
             }
             else

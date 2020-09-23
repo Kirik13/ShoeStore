@@ -79,7 +79,7 @@ namespace ShoeStore
         {
             char number = e.KeyChar;
 
-            if (!Char.IsDigit(number) && number != 8)
+            if (!Char.IsDigit(number) && number != 8 )
             {
                 e.Handled = true;
             }
