@@ -102,7 +102,7 @@ namespace ShoeStore
             }
             else
             {
-                MessageBox.Show("Нету такого пользователя");
+                MessageBox.Show("Неправильный логин или пароль");
             }
             connection.Close();
         }

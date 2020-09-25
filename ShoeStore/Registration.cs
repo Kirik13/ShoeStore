@@ -53,36 +53,53 @@ namespace ShoeStore
 
         private void Register2_Click(object sender, EventArgs e)
         {
+            bool loginRepeated = false;
             connection.Open();
-
-            if (Password.Text != "Password" && Login.Text != "Username" && Surname.Text != "Surname" && Name1.Text != "Name" && Name1.Text != "" && Surname.Text != "" && Login.Text != "" && Password.Text != "")
+            String query = "SELECT [Логин] FROM Users ORDER BY [Код]";
+            OleDbCommand command1 = new OleDbCommand(query, connection);
+            OleDbDataReader reader = command1.ExecuteReader();
+            while (reader.Read())
             {
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "insert into Users(Логин,Пароль,Фамилия,Имя) values(@login,@pass,@firstname,@name)";
-                command.Parameters.AddWithValue("@login", Login.Text);
-                command.Parameters.AddWithValue("@pass", Password.Text);
-                command.Parameters.AddWithValue("@firstname", Surname.Text);
-                command.Parameters.AddWithValue("@name", Name1.Text);
-                command.ExecuteNonQuery();
-
-                Surname.Text = "Surname";
-                Surname.ForeColor = Color.Black;
-
-                Name1.Text = "Name";
-                Name1.ForeColor = Color.Black;
-
-                Login.Text = "Username";
-                Surname.ForeColor = Color.Black;
-
-                Password.Text = "Password";
-                Password.ForeColor = Color.Black;
-
-                MessageBox.Show("Вы успешно зарегистрировались");
+                if (Convert.ToString(Login.Text) == Convert.ToString(reader[0]))
+                {
+                    MessageBox.Show("Такой логин уже существует");
+                    loginRepeated = true;
+                    break;
+                }
+               
             }
-            else
+
+            if (loginRepeated == false)
             {
-                MessageBox.Show("Заполните все поля");
+                if (Password.Text != "Password" && Login.Text != "Username" && Surname.Text != "Surname" && Name1.Text != "Name" && Name1.Text != "" && Surname.Text != "" && Login.Text != "" && Password.Text != "")
+                {
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+                    command.CommandText = "insert into Users(Логин,Пароль,Фамилия,Имя) values(@login,@pass,@firstname,@name)";
+                    command.Parameters.AddWithValue("@login", Login.Text);
+                    command.Parameters.AddWithValue("@pass", Password.Text);
+                    command.Parameters.AddWithValue("@firstname", Surname.Text);
+                    command.Parameters.AddWithValue("@name", Name1.Text);
+                    command.ExecuteNonQuery();
+
+                    Surname.Text = "Surname";
+                    Surname.ForeColor = Color.Black;
+
+                    Name1.Text = "Name";
+                    Name1.ForeColor = Color.Black;
+
+                    Login.Text = "Username";
+                    Surname.ForeColor = Color.Black;
+
+                    Password.Text = "Password";
+                    Password.ForeColor = Color.Black;
+
+                    MessageBox.Show("Вы успешно зарегистрировались");
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все поля");
+                }
             }
 
             connection.Close();
