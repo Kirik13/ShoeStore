@@ -300,6 +300,8 @@ namespace ShoeStore
         private void Prod_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages[2];
+            Mec.MaxLength = 2;
+            God.MaxLength = 4;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -341,7 +343,7 @@ namespace ShoeStore
 
             bool prov = false;
             string data = Day.Text + "." + Mec.Text + "." + God.Text;
-            if (Day.Text != "" && Mec.Text != "" && God.Text != "")
+            if (Day.Text != "" && Mec.Text != "" && God.Text != "" && Mec.Text.Length == 2 && God.Text.Length == 4)
             {
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
@@ -380,7 +382,7 @@ namespace ShoeStore
             }
             else
             {
-                MessageBox.Show("Заполните все поля");
+                MessageBox.Show("Поля не заполнины либо некорректно введенна дата");
             }
             connection.Close();
         }
